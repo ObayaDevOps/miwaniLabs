@@ -52,7 +52,7 @@ const exhibitionDetails = [
     exhibitionDescription:"Odur reconstructs his living space, placing a hanging installation of sand cast aluminium shaped like bullets, in the centre of the room. ",
     photo: odurMuwawaPhoto,
     artistPFP: odurPFP,
-    linkToExhibition: '/exhibitions/odur-muwawa-exhibition',
+    linkToExhibition: '',
     followLink:
         'https://www.instagram.com/afropocene/',
   },
