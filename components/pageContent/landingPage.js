@@ -1,4 +1,4 @@
-import { Heading, Box, Container, VStack, SimpleGrid, Center, Button, AspectRatio } from '@chakra-ui/react'
+import { Heading, Box, Container, VStack, SimpleGrid, Center, Button, AspectRatio, useColorModeValue, ButtonGroup} from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import LandingPageSplitWithImage from '../landingPageSections/feature'
 import acunye from '../../public/images/visting-artists/acunye/Afropocene-Studio-BTS60.jpg'
@@ -47,16 +47,61 @@ export default function LandingPage() {
                 }}
                 color="white"
                 pt={{base: 10, md: 20}}
-                pb={{base: 5}}
+                // pb={{base: 5}}
                  >
                    Med-Optics
                 </Heading>
             </Center>
+            <Center >
+            <Heading
+                 as='h3'
+                 size='3xl'
+                 fontSize = '3xl'
+                textAlign="center"
+                 sx={{
+                  background: "linear-gradient(90deg, #62e897 20%, #129b3c 70.35%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent"
+                }}
+                color="white"
+                // pt={{base: 10, md: 20}}
+                pb={{base: 5}}
+                 >
+                   Cherish The Gift of Sight
+                </Heading>
+            </Center>
 
             {/* Scrolling Text */}
-            <Container maxW='md' centerContent     zIndex={1}
+            {/* <Container maxW='md' centerContent     zIndex={1}
 >
                 <DynamicTypeWriterWithNoSSR/>
+            </Container> */}
+
+            <Container maxW='md' centerContent     zIndex={1} pt={{base: 10}}>
+            <ButtonGroup  spacing='6'> 
+
+              <Button
+                colorScheme='green'
+                color={useColorModeValue('green.50', 'green.900')}
+                sx={{
+                  background: "linear-gradient(90deg, #62e897 20%, #129b3c 70.35%)",
+                  // WebkitBackgroundClip: "text",
+                  // WebkitTextFillColor: "transparent"
+                }}
+              >
+                Book an Eye Test</Button>
+
+                <Button
+                colorScheme='green'
+                color={useColorModeValue('green.50', 'green.900')}
+                sx={{
+                  background: "linear-gradient(90deg, #62e897 20%, #129b3c 70.35%)",
+                  // WebkitBackgroundClip: "text",
+                  // WebkitTextFillColor: "transparent"
+                }}
+              >
+                Find A Treatment Center</Button>
+                </ButtonGroup>
             </Container>
 
         </Box>
