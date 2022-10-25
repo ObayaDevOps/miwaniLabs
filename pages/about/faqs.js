@@ -20,9 +20,9 @@ import {
         backgroundSize={'fit'}
         backgroundPosition={'center center'}>
         <Head>
-        <title>About Us: Afropocene StudioLab</title>
-        <meta name="description" content="Afropocene StudioLab Webpage" />
-        <link rel="shortcut icon" href="../../../images/icon/uganda.png"></link>
+        <title>Frequently Asked Questions</title>
+        <meta name="description" content="Med-Optics Ltd Webpage" />
+        <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
       </Head>
         <VStack
           w={'full'}
@@ -34,62 +34,14 @@ import {
               color={'white'}
               fontWeight={700}
               lineHeight={1.2}
-              fontFamily={'Space Mono'}
-              fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}
+              fontFamily={'Arial'}
+              fontSize={useBreakpointValue({ base: '2xl', md: '4xl' })}
               paddingTop={useBreakpointValue({base: '10', md: '0'})}
               >
-                Anthropocene
-
-                /&apos;anθrəpəˌsiːn/ {' '}
-
-                adjective
-
-                relating to or denoting the current geological age, 
-                viewed as the period during which human activity has been the dominant 
-                influence on climate and the environment.
-
+                Frequently Asked Questions
                 ​
                 </Text>
-                <Text color={'white'}
-              fontWeight={700}
-              lineHeight={1.2}
-              fontFamily={'Space Mono'}
-              fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}>
-              
-                Afro-
-
-                /&apos;afrəʊ/
-
-                combining form
-
-                prefix: Afro-
-
-                African; African and …
-
-                &apos;Afro-Asiatic&apos;
-
-                relating to Africa.
-
-                &apos;Afrocentric&apos;
-
-                ​
-                </Text>
-                <Text
-                color={'white'}
-                fontWeight={700}
-                lineHeight={1.2}
-                fontFamily={'Space Mono'}
-                fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}
-                >
-                We are afrofuturists interested in exploring the cultural aesthetics, 
-                philosophies of science and history that are borne of the developing intersection of 
-                African/Africana diaspora culture with technology. 
-
-                ​
-
-                A &apos;Co-Arts&apos; space for artists, researchers, thinkers, experimenters, developers 
-                & do-ers. We provide space and community for any and all explorers of African futures. 
-            </Text>
+                
             <Stack 
             direction={'row'}
             paddingBottom={useBreakpointValue({base: '5em', md: '0'})}
@@ -100,7 +52,7 @@ import {
                 bg={'whiteAlpha.300'}
                 rounded={'full'}
                 color={'white'}
-                fontFamily={'Space Mono'}
+                fontFamily={'Arial'}
                 _hover={{ bg: 'whiteAlpha.500' }}
                 >
                 Show me more

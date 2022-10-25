@@ -25,7 +25,7 @@ import Head from 'next/head'
       <Container maxW={'7xl'}>
       <Head>
         <title>Workshop: Nothing New Under the Sun</title>
-        <meta name="description" content="Afropocene StudioLab Webpage" />
+        <meta name="description" content="Med-Optics Webpage" />
         <link rel="shortcut icon" href="../../../images/icon/uganda.png"></link>
       </Head>
 

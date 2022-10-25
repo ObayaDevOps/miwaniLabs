@@ -82,8 +82,8 @@ import {
 
       <Head>
         <title>Afropocene Studio Space Enquiry</title>
-        <meta name="description" content="Afropocene StudioLab Webpage" />
-        <link rel="shortcut icon" href="../../../images/icon/uganda.png"></link>
+        <meta name="description" content="Med-Optics Ltd Webpage" />
+        <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
       </Head>
 
         <Box

@@ -1,4 +1,3 @@
-import OdurMuwawaExhibitionPage from "./frame-size-guide";
 
 // a page that will redirect the user to the archive page, if there's nothing on at the moment
 // export default function CurrentExhibitionPage() {
@@ -190,12 +189,12 @@ const ExhibitionList = () => {
   return (
     <Container maxW={'7xl'} p="3">
       <Head>
-        <title>Exhibitions: Afropocene</title>
-        <meta name="description" content="Afropocene StudioLab Webpage" />
-        <link rel="shortcut icon" href="../../../images/icon/uganda.png"></link>
+        <title>Services | Med-Optics</title>
+        <meta name="description" content="Med-Optics Ltd Webpage" />
+        <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
       </Head>
 
-      <Heading as="h1" size={'3xl'}>Exhibitions at the StudioLab</Heading>
+      <Heading as="h1" size={'3xl'}>Services from Med-Optics</Heading>
       <Box
         marginTop={{ base: '1', sm: '5' }}
         display="flex"

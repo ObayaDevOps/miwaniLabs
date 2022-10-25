@@ -43,8 +43,9 @@ import {
     const { colorMode, toggleColorMode } = useColorMode()
     return (
       <header>
-      <Script src="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
-        <Button onClick={toggleColorMode} size='xs' fontFamily={'Space Mono'} py={-1} rounded={'none'} >
+      {/* <Script src="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" /> */}
+        <Button onClick={toggleColorMode} size='xs' fontFamily={'Arial'} py={-1}  rounded={'md'}
+ >
           {colorMode === 'light' ? 'Dark' : 'Light'} Mode
         </Button>
       </header>
@@ -133,7 +134,7 @@ import {
                   fontWeight={500}
                   color={linkColor}
                   _hover={{ bg: colorMode === 'light' ? 'green.50': 'green.700', textColor: 'green.400'}}
-                  fontFamily={'Space Mono'}
+                  fontFamily={'Arial'}
                   >
                     {navItem.label}
                   </Link>
@@ -147,7 +148,7 @@ import {
                   boxShadow={'xl'}
                   bg={popoverContentBgColor}
                   p={4}
-                  rounded={'none'}
+                  rounded={'md'}
                   minW={'sm'}>
                   <Stack>
                     {navItem.children.map((child) => (
@@ -170,7 +171,7 @@ import {
         role={'group'}
         display={'block'}
         p={2}
-        // rounded={'md'}
+        rounded={'md'}
         _hover={{ bg: useColorModeValue('green.50', 'gray.900') }}
         >
         <Stack direction={'row'} align={'center'}>
@@ -179,7 +180,7 @@ import {
               transition={'all .3s ease'}
               _groupHover={{ color: 'green.400' }}
               fontWeight={500}
-              fontFamily={'Space Mono'}
+              fontFamily={'Arial'}
               _hover={{ color: 'green.400' }}
               >
               {label}
@@ -228,7 +229,7 @@ import {
           href={href ?? '#'}
           justify={'space-between'}
           align={'center'}
-          fontFamily="Space Mono"
+          fontFamily="Arial"
 
           _hover={{
             textDecoration: 'none',
@@ -260,7 +261,7 @@ import {
             {children &&
               children.map((child) => (
                 <NextLink href={child.href} key={child.label} passHref>
-                  <Link  py={2}  fontFamily="Space Mono">
+                  <Link  py={2}  fontFamily="Arial">
                     {child.label}
                   </Link>
                 </NextLink>

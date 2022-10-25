@@ -102,10 +102,10 @@ import NextLink from 'next/link'
           direction={'column'}
           textAlign={'left'}
           justifyContent={'space-between'}>
-          <chakra.p fontFamily={'Space Mono'} fontWeight={'bold'} fontSize={20}>
+          <chakra.p fontFamily={'Arial'} fontWeight={'bold'} fontSize={20}>
             {name}
             <chakra.span
-              fontFamily={'Space Mono'}
+              fontFamily={'Arial'}
               fontWeight={'medium'}
               color={'gray.500'}
               py={3}>
@@ -114,7 +114,7 @@ import NextLink from 'next/link'
             </chakra.span>
           </chakra.p>
           <chakra.p
-            fontFamily={'Space Mono'}
+            fontFamily={'Arial'}
             fontWeight={'light'}
             fontSize={'15px'}
             pb={10}>
@@ -176,7 +176,7 @@ import NextLink from 'next/link'
         
         <Box width={{ base: 'full', sm: 'lg', lg: 'xl' }} margin={'auto'}>
           <chakra.h3
-            fontFamily={'Space Mono'}
+            fontFamily={'Arial'}
             fontWeight={'bold'}
             fontSize={20}
             textTransform={'uppercase'}
@@ -186,7 +186,7 @@ import NextLink from 'next/link'
           <chakra.h1
             py={5}
             fontSize={48}
-            fontFamily={'Space Mono'}
+            fontFamily={'Arial'}
             fontWeight={'bold'}
             color={useColorModeValue('gray.700', 'gray.50')}>
             Artists
@@ -194,7 +194,7 @@ import NextLink from 'next/link'
           <chakra.h2
           margin={'auto'}
           width={'70%'}
-          fontFamily={'Space Mono'}
+          fontFamily={'Arial'}
           fontWeight={'medium'}
           color={useColorModeValue('gray.500', 'gray.400')}>
           {' '}

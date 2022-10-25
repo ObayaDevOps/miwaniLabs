@@ -54,7 +54,7 @@ import {
   
   const ListHeader = ({ children }) => {
     return (
-      <Text fontWeight={'500'} fontSize={'lg'} mb={2} fontFamily={'Space Mono'}>
+      <Text fontWeight={'500'} fontSize={'lg'} mb={2} fontFamily={'Arial'}>
         {children}
       </Text>
     );
@@ -75,7 +75,7 @@ import {
                 <Image src={useColorModeValue( MedOptics20Years,MedOptics20Years)} width={595} height={134}/>
                 </NextLink>
               </Box>
-              <Text fontSize={'sm'} fontFamily={'Space Mono'}>
+              <Text fontSize={'sm'} fontFamily={'Arial'}>
                 © 2022 Med-Optics Ltd.
                 Cherish the Gift of Sight
               </Text>
@@ -92,9 +92,9 @@ import {
               </Stack>
             </Stack>
             <Stack align={'flex-start'}>
-              {/* <ListHeader fontFamily={'Space Mono'}>Company</ListHeader>
+              {/* <ListHeader fontFamily={'Arial'}>Company</ListHeader>
               <NextLink href={'/studios/contact-enquiry'} passHref>
-                <Link fontFamily={'Space Mono'}>Contact us</Link>
+                <Link fontFamily={'Arial'}>Contact us</Link>
               </NextLink> */}
 
             </Stack>

@@ -24,9 +24,9 @@ import Head from 'next/head'
     return (
       <Container maxW={'7xl'}>
       <Head>
-        <title>Odur: Muwawa Exhibition</title>
-        <meta name="description" content="Afropocene StudioLab Webpage" />
-        <link rel="shortcut icon" href="../../../images/icon/uganda.png"></link>
+        <title>Frame Size Guide</title>
+        <meta name="description" content="Med-Optics Ltd Webpage" />
+        <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
       </Head>
 
 

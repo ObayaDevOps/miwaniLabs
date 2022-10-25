@@ -6,9 +6,9 @@ const theme = extendTheme({
       useSystemColorMode: false
     },
     fonts:{
-      heading: 'Space Mono, sans-serif',
+      heading: 'Arvo, sans-serif',
       body: 'Arial, sans-serif',
-      text:  'Space Mono, sans-serif',
+      text:  'Arial, sans-serif',
     },
     colors:{
       50: '#dfffe9',

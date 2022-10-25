@@ -20,9 +20,9 @@ import {
         backgroundSize={'fit'}
         backgroundPosition={'center center'}>
         <Head>
-        <title>About Us: Afropocene StudioLab</title>
-        <meta name="description" content="Afropocene StudioLab Webpage" />
-        <link rel="shortcut icon" href="../../../images/icon/uganda.png"></link>
+        <title>About Us: MedOptics</title>
+        <meta name="description" content="Med-Optics Ltd Webpage" />
+        <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
       </Head>
         <VStack
           w={'full'}
@@ -34,61 +34,40 @@ import {
               color={'white'}
               fontWeight={700}
               lineHeight={1.2}
-              fontFamily={'Space Mono'}
+              fontFamily={'Arial'}
               fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}
               paddingTop={useBreakpointValue({base: '10', md: '0'})}
               >
-                Anthropocene
+                Med - Optics
 
-                /&apos;anθrəpəˌsiːn/ {' '}
-
-                adjective
-
-                relating to or denoting the current geological age, 
-                viewed as the period during which human activity has been the dominant 
-                influence on climate and the environment.
+                Med-Optics  is a private company that was established in 2002 to provide a high standard of quality eye care services.
+                  We have modern equipment and experienced staff to take care of all patients’ needs.
 
                 ​
                 </Text>
                 <Text color={'white'}
               fontWeight={700}
               lineHeight={1.2}
-              fontFamily={'Space Mono'}
+              fontFamily={'Arial'}
               fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}>
               
-                Afro-
-
-                /&apos;afrəʊ/
-
-                combining form
-
-                prefix: Afro-
-
-                African; African and …
-
-                &apos;Afro-Asiatic&apos;
-
-                relating to Africa.
-
-                &apos;Afrocentric&apos;
-
+                  The Company
+                  Over the years, we have grown from a single Optometrist on Buganda road to a team of 50+ strong across 9 service centres.
+                  Established to raise the standard of optometry in Uganda, the company continues to be guided by our core values of 
+                  Professionalism, Honesty, Quality and Excellence in everything we do.
                 ​
                 </Text>
                 <Text
                 color={'white'}
                 fontWeight={700}
                 lineHeight={1.2}
-                fontFamily={'Space Mono'}
+                fontFamily={'Arial'}
                 fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}
                 >
-                We are afrofuturists interested in exploring the cultural aesthetics, 
-                philosophies of science and history that are borne of the developing intersection of 
-                African/Africana diaspora culture with technology. 
-
-                ​
-
-                A &apos;Co-Arts&apos; space for artists, researchers, thinkers, experimenters, developers 
-                & do-ers. We provide space and community for any and all explorers of African futures. 
+                  Our Mission
+                  Med Optics is devoted to improving our client’s vision. 
+                  We passionately enhance and protect eye health by providing expertise,
+                  accessible services and high-quality products tailored to our client’s needs.
             </Text>
             <Stack 
             direction={'row'}
@@ -100,7 +79,7 @@ import {
                 bg={'whiteAlpha.300'}
                 rounded={'full'}
                 color={'white'}
-                fontFamily={'Space Mono'}
+                fontFamily={'Arial'}
                 _hover={{ bg: 'whiteAlpha.500' }}
                 >
                 Show me more

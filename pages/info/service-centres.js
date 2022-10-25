@@ -32,9 +32,9 @@ import Head from 'next/head'
       <Container maxW={'7xl'}>
 
       <Head>
-        <title>Afropocene StudioLab Kabalagala</title>
-        <meta name="description" content="Afropocene StudioLab Webpage" />
-        <link rel="shortcut icon" href="../../../images/icon/uganda.png"></link>
+        <title>Med-Optics Service Centers</title>
+        <meta name="description" content="Med-Optics Ltd Webpage" />
+        <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
       </Head>
 
         <SimpleGrid
@@ -51,13 +51,13 @@ import Head from 'next/head'
                 lineHeight={1.1}
                 fontWeight={600}
                 fontSize={{ base: '4xl', sm: '4xl', lg: '5xl' }}>
-                Afropocene StudioLab
+                Med-Optics: Service Centers
               </Heading>
               <Text
                 color={useColorModeValue('gray.900', 'gray.400')}
                 fontWeight={300}
                 fontSize={'1xl'}>
-                Kabalagala, Kampala Uganda
+                Uganda
               </Text>
             </Box>
   
@@ -74,13 +74,12 @@ import Head from 'next/head'
                   color={useColorModeValue('gray.500', 'gray.400')}
                   fontSize={'2xl'}
                   fontWeight={'300'}>
-                    Welcome to our (MeatSpace) Home
+                    Welcome to Med-Optics !
                 </Text>
                 <Text fontSize={'lg'}>
-                The studio lab is a place for ideas big and small! With two floors in an industrial building, we
-                provide space and community for experimentation and collaboration. So far the space has
-                had several configurations: from studio space, to pop up museum, to a concert hall, and a
-                film all in a year!
+                Med-Optics is a private company that was established in 2002 to provide a high standard of quality eye care services.
+                Over the years,
+                 we have established ourselves as the leading provider of Optometry and Ophthalmic services in Uganda.
                 </Text>
               </VStack>
               <Box>

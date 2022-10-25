@@ -8,7 +8,6 @@ import {
     Box,
     Center,
     Button,
-    AspectRatio,
     HStack,
   } from '@chakra-ui/react';
 
@@ -26,16 +25,13 @@ import {
 
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
-            <Heading as='h3' size='2xl'>We Write New African Narratives</Heading>
+            <Heading as='h3' size='2xl'>Life long Aftercare</Heading>
             <Text color={'gray.500'} fontSize={'2xl'}>
-            We are afrofuturists interested in exploring the cultural aesthetics, 
-            philosophies of science and history that are borne of the developing 
-            intersection of African/Africana diaspora culture with technology.
-
-            Our mission is to help ... to create ... to inspire
+            We believe that care extends long after you leave the service centre.
+             To ensure the utmost patient satisfaction, adjustments and repairs are free for all our frames!
             </Text>
             <NextLink href='../../../about/about-us' passHref>
-              <Button size="md" color={'green.500'} fontFamily="Space Mono"> More About Us</Button>
+              <Button size="md" color={'green.500'} fontFamily="Arial"> More About Us</Button>
             </NextLink>
           </Stack>
           <Flex>
@@ -43,13 +39,13 @@ import {
             </Flex>
 
           <Stack spacing={4}>
-            <Heading as='h3' size='2xl'>We Provide Space for Emerging Artists</Heading>
+            <Heading as='h3' size='2xl'>Computerized Eye Examination</Heading>
             <Text color={'gray.500'} fontSize={'2xl'}>
-            A Co-Arts space for artists, researchers, thinkers, experimenters, developers & do-ers.
-             We provide space and community for any and all explorers of African futures.
+            See an Optometrist or Ophthalmologist according to your needs. A number of tests are available in order to detect
+             the cause of your discomfort or vision impairment.
             </Text>
             <NextLink href='../../../studios/kabalagala-studio' passHref>
-              <Button  size="md" color={'green.500'} fontFamily="Space Mono">Explore the Studio</Button>
+              <Button  size="md" color={'green.500'} fontFamily="Arial">Book an Eye Test</Button>
             </NextLink>
 
 
@@ -60,27 +56,17 @@ import {
           </Flex>
 
           <Stack spacing={4}>
-            <Heading as='h3' size='2xl'>We Innovate with Creative Technology</Heading>
+            <Heading as='h3' size='2xl'>Made-to-measure lenses</Heading>
             <Text color={'gray.500'} fontSize={'2xl'}>
-            We also have extensive experience with Technology and Software Development
-             and we have plans to merge the worlds of Nature, Art and Technology...
+            We manufacture lenses in house and are the exclusive Uganda providers of BBGR lenses,
+             which is a French brand with over 170 years of lens crafting expertise.
             </Text>
             <NextLink href='../../../tech/this'>
-              <Button size="md" color={'green.500'} fontFamily="Space Mono">Explore Tech+Art</Button>
+              <Button size="md" color={'green.500'} fontFamily="Arial">Go to Store</Button>
             </NextLink>
           </Stack>
           <Flex>
-            <AspectRatio ratio={4/3}  float="left" clear="both" width={'85vw'} height={{base:'45vh', md:'55vh'}} left >
-              <iframe 
-              loop={true}
-              autoPlay
-              muted
-              src={'../../../video/Reaction-Diffusion.mp4'} 
-              allow="autoplay"
-              title="Reaction-Diffusion-Clip" ></iframe>
-
-            </AspectRatio>
-
+          <NextImage src={studio2} alt="work by kharumwa"  placeholder="blur"/>
           </Flex>
         </SimpleGrid>
        </Center>

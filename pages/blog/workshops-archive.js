@@ -151,8 +151,8 @@ const WorkshopList = () => {
     <Container maxW={'7xl'} p="3">
       <Head>
         <title>Workshops: Afropocene</title>
-        <meta name="description" content="Afropocene StudioLab Webpage" />
-        <link rel="shortcut icon" href="../../../images/icon/uganda.png"></link>
+        <meta name="description" content="Med-Optics Ltd Webpage" />
+        <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
       </Head>
 
       <Heading as="h1" size={'3xl'}>Workshops at the StudioLab</Heading>

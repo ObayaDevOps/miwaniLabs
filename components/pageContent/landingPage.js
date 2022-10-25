@@ -1,13 +1,9 @@
-import { Heading, Box, Container, VStack, SimpleGrid, Center, Button, AspectRatio, useColorModeValue, ButtonGroup} from '@chakra-ui/react'
-import dynamic from 'next/dynamic'
+import { Heading, Box, Container, Stack, SimpleGrid, Center, Button, AspectRatio, Flex, useColorModeValue, ButtonGroup} from '@chakra-ui/react'
 import LandingPageSplitWithImage from '../landingPageSections/feature'
-import acunye from '../../public/images/visting-artists/acunye/Afropocene-Studio-BTS60.jpg'
+import { SlideData } from "../../components/utils/carousel/medoptics-landing-slides"
+import ImageSlider from '../../components/utils/carousel/imageSlider'
 
 
-const DynamicTypeWriterWithNoSSR = dynamic(
-    () => import('../utils/typewriter'),
-    { ssr: false }
-  )
 
 
 export default function LandingPage() {
@@ -33,12 +29,17 @@ export default function LandingPage() {
         {/* <Box minHeight='100vh' bgSize="cover" bgPosition="center" bgAttachment="fixed" backgroundImage={{base: '../../../images/backgrounds/MandelbrotMediumDark.jpg', lg:'../../../images/backgrounds/MandelbrotLargeDark.jpg' }}> */}
         <Box minHeight='100vh' bgSize="cover" bgPosition="center" bgAttachment="fixed" >
  
+        <Flex>
+            {/* <NextImage src={odurInstallation}  placeholder="blur" /> */}
+            <ImageSlider slides={SlideData} />
+        </Flex>
 
-            <Center p={{sm:1 , md:10}} >
+
+            <Center  >
                 <Heading
                  as='h1'
-                 size='6xl'
-                 fontSize = '6xl'
+                 size={{base:'2xl', lg:'6xl'}}
+                 fontSize={{base:'2xl', lg:'6xl'}}
                 textAlign="center"
                  sx={{
                   background: "linear-gradient(90deg, #62e897 20%, #129b3c 70.35%)",
@@ -55,8 +56,8 @@ export default function LandingPage() {
             <Center >
             <Heading
                  as='h3'
-                 size='3xl'
-                 fontSize = '3xl'
+                 size={{base:'lg', lg:'3xl'}}
+                 fontSize={{base:'lg', lg:'3xl'}}
                 textAlign="center"
                  sx={{
                   background: "linear-gradient(90deg, #62e897 20%, #129b3c 70.35%)",
@@ -65,20 +66,14 @@ export default function LandingPage() {
                 }}
                 color="white"
                 // pt={{base: 10, md: 20}}
-                pb={{base: 5}}
+                // pb={{base: 5}}
                  >
                    Cherish The Gift of Sight
                 </Heading>
             </Center>
 
-            {/* Scrolling Text */}
-            {/* <Container maxW='md' centerContent     zIndex={1}
->
-                <DynamicTypeWriterWithNoSSR/>
-            </Container> */}
-
-            <Container maxW='md' centerContent     zIndex={1} pt={{base: 10}}>
-            <ButtonGroup  spacing='6'> 
+            <Container maxW='md' centerContent     zIndex={1} pt={{base: 6}}>
+            <Stack  spacing='6'> 
 
               <Button
                 colorScheme='green'
@@ -101,10 +96,11 @@ export default function LandingPage() {
                 }}
               >
                 Find A Treatment Center</Button>
-                </ButtonGroup>
+                </Stack>
             </Container>
-
         </Box>
+
+
 
       <Center p={{sm:1 , md:10}} flex='1'>
         <Heading
