@@ -12,7 +12,7 @@ import {
   } from '@chakra-ui/react';
 
   import NextImage from 'next/image'
-  import studio2 from '../../public/images/studio/afropocene-OdurAssistant.jpg'
+  import Slide1 from '../../public/images/medoptics/Slide-1.png'
   import studio3 from '../../public/images/studio/PaperEgg.png'
   import NextLink from 'next/link'
   
@@ -35,7 +35,13 @@ import {
             </NextLink>
           </Stack>
           <Flex>
-            <NextImage src={studio3} alt="work by kharumwa" placeholder="blur"/>
+            <NextImage 
+            src='https://res.cloudinary.com/dsjslxmlh/image/upload/v1666785191/Slide-1_evhaub.png' 
+            alt="eye glasses fitting"
+            width={1349}
+            height={550} 
+            // placeholder="blur"
+            />
             </Flex>
 
           <Stack spacing={4}>
@@ -52,7 +58,13 @@ import {
 
           </Stack>
           <Flex>
-            <NextImage src={studio2} alt="work by kharumwa"  placeholder="blur"/>
+            <NextImage 
+            src={Slide1} 
+            alt="work by kharumwa"
+            width={1349}
+            height={550}   
+            placeholder="blur"
+            />
           </Flex>
 
           <Stack spacing={4}>
@@ -66,7 +78,7 @@ import {
             </NextLink>
           </Stack>
           <Flex>
-          <NextImage src={studio2} alt="work by kharumwa"  placeholder="blur"/>
+          <NextImage src={Slide1} alt="work by kharumwa"  placeholder="blur"/>
           </Flex>
         </SimpleGrid>
        </Center>

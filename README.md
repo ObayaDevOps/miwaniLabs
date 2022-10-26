@@ -18,6 +18,38 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+
+
+## Image Hosting
+For Speed and Performance, this website Hosts and retirevies all images on Cloudinary, an account is Needed.
+Can Log in via Github credentials.
+
+Link:https://cloudinary.com/
+Next Js Image Optimisation and Set Up : https://vercel.com/docs/concepts/image-optimization/remote-images
+Getting Blurred Placeholders: https://spacejelly.dev/posts/how-to-use-cloudinary-images-in-next-js-with-blurred-placeholders/
+
+
+## Useful UI Components
+ ChakraUI:https://chakra-ui.com/docs/
+ ChakraUi Components: https://chakra-templates.dev/page-sections/hero
+ Dark Mode: https://chakra-ui.com/getting-started/comparison#dark-mode-%F0%9F%8C%9C
+ Carousel: https://www.npmjs.com/package/react-responsive-carousel
+ Google Fonts: https://fonts.google.com/
+ Chakra Themeing: https://chakra-ui.com/docs/styled-system/customize-theme#theme-extension-withdefaultcolorscheme
+
+
+
+
+## Analytics + Testing Performance
+Run your URL through this to view your speed. 
+Lighthouse WebPortal: https://pagespeed.web.dev/
+
+Vercel Web Vitals:https://vercel.com/docs/concepts/analytics/web-vitals
+
+
+Audience/Visitor Analytics: https://vercel.com/docs/concepts/analytics/audiences
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
