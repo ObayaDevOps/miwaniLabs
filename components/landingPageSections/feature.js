@@ -15,7 +15,36 @@ import {
   import Slide1 from '../../public/images/medoptics/Slide-1.png'
   import studio3 from '../../public/images/studio/PaperEgg.png'
   import NextLink from 'next/link'
-  
+  // import {AdvancedImage} from '@cloudinary/react';
+
+  //make these twho into util functions
+import { getCloudinaryImage, getCloudinaryImageBlur } from '../utils/cloudinaryImageRetreival';
+
+  // function getCloudinaryImage(cloudinaryImageId) {
+  //   const url  = buildUrl('Med-Optics-Slide1.png', {
+  //     cloud: {
+  //       cloudName: 'medoptics-image-cloud',
+  //     }
+  //   });
+
+  //   return url;
+  // }
+
+
+  // function getCloudinaryImageBlur(cloudinaryImageId){
+  //   const blurUrl = buildUrl('Med-Optics-Slide1.png', {
+  //     cloud: {
+  //       cloudName: 'medoptics-image-cloud',
+  //     },
+  //     transformations: {
+  //       effect: "blur:1000",
+  //       quality: 1
+  //     }
+  //   });
+
+  //   return blurUrl;
+  // }
+
 
   
   export default function LandingPageSplitWithImage() {
@@ -36,12 +65,16 @@ import {
           </Stack>
           <Flex>
             <NextImage 
-            src='https://res.cloudinary.com/dsjslxmlh/image/upload/v1666785191/Slide-1_evhaub.png' 
+            src={getCloudinaryImage('Med-Optics-Slide1.png')} 
             alt="eye glasses fitting"
             width={1349}
             height={550} 
-            // placeholder="blur"
+            placeholder="blur"
+            blurDataURL={getCloudinaryImageBlur('Med-Optics-Slide1.png')}
             />
+
+{/* <AdvancedImage cldImg={myImage} plugins={[lazyload(), placeholder({mode: 'predominant-color'})]}/> */}
+
             </Flex>
 
           <Stack spacing={4}>

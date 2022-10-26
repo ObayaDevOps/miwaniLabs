@@ -25,6 +25,8 @@ For Speed and Performance, this website Hosts and retirevies all images on Cloud
 Can Log in via Github credentials.
 
 Link:https://cloudinary.com/
+React/NextJs SetUp: https://cloudinary.com/documentation/react_quick_start
+
 Next Js Image Optimisation and Set Up : https://vercel.com/docs/concepts/image-optimization/remote-images
 Getting Blurred Placeholders: https://spacejelly.dev/posts/how-to-use-cloudinary-images-in-next-js-with-blurred-placeholders/
 
