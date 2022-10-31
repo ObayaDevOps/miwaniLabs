@@ -11,7 +11,7 @@ import {
   createIcon,
   Flex,
   SimpleGrid,
-  Center
+  Center,
 } from '@chakra-ui/react';
 
 import { SlideData } from "../../components/utils/carousel/medoptics-landing-slides"
@@ -19,10 +19,12 @@ import ImageSlider from '../../components/utils/carousel/imageSlider'
 
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
-
-
-
-
+import Hero1 from './hero';
+import ThreeFeature from './threeFeatures';
+import CallToAction from './callToAction';
+import CallToActionBanner from './callToActionBanner';
+import TwoPicFeature from './twoPicFeature';
+import WithSpeechBubbles from './testimonials';
 
 export default function CallToActionWithAnnotation() {
   return (
@@ -34,13 +36,19 @@ export default function CallToActionWithAnnotation() {
         />
       </Head>
 
-      <Flex>
-            {/* <NextImage src={odurInstallation}  placeholder="blur" /> */}
+      {/* <Flex>
+            //<NextImage src={odurInstallation}  placeholder="blur" />
             <ImageSlider slides={SlideData} />
-        </Flex>
+        </Flex> */}
 		
-      <Hero />
-      <SimpleThreeColumns />
+      <Hero1 />
+      <ThreeFeature />
+      <TwoPicFeature />
+      <WithSpeechBubbles />
+
+      {/* <CallToAction />
+      <CallToActionBanner /> */}
+      {/* <SimpleThreeColumns /> */}
       
     </>
   );

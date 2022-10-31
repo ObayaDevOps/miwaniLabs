@@ -4,6 +4,7 @@ import NextImage from 'next/image';
 import { getCloudinaryImage, getCloudinaryImageBlur } from "../cloudinaryImageRetreival";
 
 //OD: Currently hardcoded for landing page images
+// Now Modified for Cloudinary - Just pass in strings
 
 const ImageSlider = ({ slides }) => {
   return (
