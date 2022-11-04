@@ -34,9 +34,10 @@ import {
       as={'h1'}
         mb={6}
         fontSize={{
-          base: "4xl",
-          md: "6xl",
+          base: "5xl",
+          md: "8xl",
         }}
+        minHeight={'1vh'}
         fontWeight="bold"
         lineHeight="none"
         letterSpacing={{
@@ -48,11 +49,11 @@ import {
           color: "green.100",
         }}
       >
-        All your{" "}
+        All your {" "}
         <Text
           display={{
             base: "block",
-            lg: "inline",
+            // lg: "inline",
           }}
           w="full"
           bgClip="text"
@@ -99,6 +100,8 @@ import {
           as="a"
           variant="solid"
           colorScheme="green"
+          bgGradient='linear(to-r, green.500, green.300)'
+
           display="inline-flex"
           alignItems="center"
           justifyContent="center"
@@ -113,7 +116,7 @@ import {
           size="lg"
           cursor="pointer"
         >
-          Find a Service
+          Find a Centre
           <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
             <path
               fillRule="evenodd"
@@ -125,6 +128,7 @@ import {
         <Button
           as="a"
           colorScheme="green"
+          bgGradient='linear(to-r, green.500, green.300)'
           display="inline-flex"
           alignItems="center"
           justifyContent="center"

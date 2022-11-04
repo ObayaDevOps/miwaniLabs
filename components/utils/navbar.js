@@ -29,7 +29,7 @@ import {
   import NextImage from 'next/image'
   import africaIcon from '../../public/images/icon/africa.png'
   import africaIconWhite from '../../public/images/icon/africa-white-icon.png'
-  import MedOptics20Years from '../../public/images/icon/Med-Optics.svg'
+  import MedOpticsBoxLogo from '../../public/images/icon/medoptics-logo-mini-square.jpeg'
 
   
 
@@ -44,7 +44,7 @@ import {
     return (
       <header>
       {/* <Script src="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" /> */}
-        <Button onClick={toggleColorMode} size='xs' fontFamily={'Arial'} py={-1}  rounded={'md'}
+        <Button onClick={toggleColorMode} size='xs' fontFamily={'Arial'} py={-1}  rounded={'md'} colorScheme={'green'}
  >
           {colorMode === 'light' ? 'Dark' : 'Light'} Mode
         </Button>
@@ -88,7 +88,7 @@ import {
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <NextLink href='/#' passHref>
             <Link>
-                <NextImage src={colorMode === 'light' ? MedOptics20Years:  MedOptics20Years} width={(595*0.4)} height={(134*0.4)}/>
+                <NextImage src={colorMode === 'light' ? MedOpticsBoxLogo:  MedOpticsBoxLogo} width={(40)} height={(40)}/>
             </Link>
           </NextLink>
 
@@ -129,6 +129,8 @@ import {
                 <PopoverTrigger>
                   <Link
                   p={2}
+                  rounded={'md'}
+
                   fontSize={'sm'}
                   href={navItem.href ?? '#'}
                   fontWeight={500}
@@ -178,6 +180,8 @@ import {
           <Box>
             <Text
               transition={'all .3s ease'}
+              rounded={'md'}
+
               _groupHover={{ color: 'green.400' }}
               fontWeight={500}
               fontFamily={'Arial'}
@@ -192,6 +196,8 @@ import {
             transition={'all .3s ease'}
             transform={'translateX(-10px)'}
             opacity={0}
+            rounded={'md'}
+
             _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
             justify={'flex-end'}
             align={'center'}

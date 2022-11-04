@@ -3,7 +3,7 @@ import { chakra, Box, SimpleGrid, Flex, Icon } from "@chakra-ui/react";
 
 const Feature = (props) => {
   return (
-    <Box>
+    <Box minHeight='1vh'>
       <Icon
         boxSize={12}
         _light={{ color: "green.700" }}
