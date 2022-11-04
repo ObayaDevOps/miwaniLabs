@@ -11,6 +11,7 @@ import {
   import Image from 'next/image';
   import { getCloudinaryImage, getCloudinaryImageBlur } from '../utils/cloudinaryImageRetreival';
 
+  import NextLink from 'next/link';
 
 
 
@@ -125,6 +126,7 @@ import {
             />
           </Icon>
         </Button>
+        <NextLink href="/appointments/eyeTest">
         <Button
           as="a"
           colorScheme="green"
@@ -152,6 +154,7 @@ import {
             />
           </Icon>
         </Button>
+        </NextLink>
       </Stack>
     </Box>
     <Box

@@ -25,6 +25,7 @@ import CallToAction from './callToAction';
 import CallToActionBanner from './callToActionBanner';
 import TwoPicFeature from './twoPicFeature';
 import WithSpeechBubbles from './testimonials';
+import { EyeTestCalendar } from '../../pages/appointments/eyeTest';
 
 export default function CallToActionWithAnnotation() {
   return (
@@ -45,6 +46,7 @@ export default function CallToActionWithAnnotation() {
       <ThreeFeature />
       <TwoPicFeature />
       <WithSpeechBubbles />
+      <EyeTestCalendar />
 
       {/* <CallToAction />
       <CallToActionBanner /> */}

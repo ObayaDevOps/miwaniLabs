@@ -51,6 +51,11 @@ Vercel Web Vitals:https://vercel.com/docs/concepts/analytics/web-vitals
 
 Audience/Visitor Analytics: https://vercel.com/docs/concepts/analytics/audiences
 
+## Booking Calendar
+Use the 'Calendly' Service Free Tier : https://calendly.com/
+
+Integrated using 'React-Calendly' package: https://github.com/tcampb/react-calendly
+
 
 ## Learn More
 
