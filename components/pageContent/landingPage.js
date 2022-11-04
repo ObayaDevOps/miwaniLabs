@@ -46,7 +46,6 @@ export default function CallToActionWithAnnotation() {
       <ThreeFeature />
       <TwoPicFeature />
       <WithSpeechBubbles />
-      <EyeTestCalendar />
 
       {/* <CallToAction />
       <CallToActionBanner /> */}
