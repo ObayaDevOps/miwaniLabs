@@ -10,7 +10,7 @@ import {
 
   import Image from 'next/image';
   import { getCloudinaryImage, getCloudinaryImageBlur } from '../utils/cloudinaryImageRetreival';
-
+  import ImageSlider from '../utils/carousel/imageSlider';
   import NextLink from 'next/link';
 
 
@@ -58,7 +58,7 @@ import {
           }}
           w="full"
           bgClip="text"
-          bgGradient='linear(to-r, teal.500, green.500)'
+          bgGradient='linear(to-r, green.500, green.400)'
           fontWeight="extrabold"
         >
           Eye Care needs
@@ -166,7 +166,7 @@ import {
       mt={20}
       textAlign="center"
     >
-      <Image
+      {/* <Image
         w="full"
         rounded="lg"
         shadow="2xl"
@@ -176,7 +176,10 @@ import {
         height={550} 
         placeholder="blur"
         blurDataURL={getCloudinaryImageBlur('Med-Optics-Slide1.png')}
-      />
+      /> */}
+
+      <ImageSlider />
+
     </Box>
   </Box>
     )

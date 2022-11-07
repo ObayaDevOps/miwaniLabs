@@ -2,7 +2,7 @@ import { buildUrl } from 'cloudinary-build-url';
 
 
 export function getCloudinaryImage(cloudinaryImageId) {
-    const url  = buildUrl('Med-Optics-Slide1.png', {
+    const url  = buildUrl(cloudinaryImageId, {
       cloud: {
         cloudName: 'medoptics-image-cloud',
       }
@@ -13,7 +13,7 @@ export function getCloudinaryImage(cloudinaryImageId) {
 
 
 export function getCloudinaryImageBlur(cloudinaryImageId){
-    const blurUrl = buildUrl('Med-Optics-Slide1.png', {
+    const blurUrl = buildUrl(cloudinaryImageId, {
       cloud: {
         cloudName: 'medoptics-image-cloud',
       },

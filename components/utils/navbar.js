@@ -325,7 +325,27 @@ import {
           href: '/products-and-services/frame-size-guide',
         },
       ],
-    },    
+    }, 
+    {
+      label: 'Book Appointment',
+      children: [
+        {
+          label: 'Eye Test',
+          subLabel: 'Modern Specialist Machinery, Great Service',
+          href: '/appointments/eyeTest',
+        },
+        {
+          label: 'Glasses Fitting',
+          subLabel: "For Maximal Comfort",
+          href: '/appointments/eyeTest',
+        },
+        {
+          label: 'Schedule Collection',
+          subLabel: 'Collect previously ordered items',
+          href: '/appointments/eyeTest',
+        }
+      ],
+    },   
     {
       label: 'Find Us',
       children: [

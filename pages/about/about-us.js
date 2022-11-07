@@ -1,93 +1,157 @@
 import {
-    Stack,
-    Flex,
-    Button,
-    Text,
-    VStack,
-    useBreakpointValue,
-  
-  } from '@chakra-ui/react';
+  Container,
+  SimpleGrid,
+  Flex,
+  Heading,
+  Text,
+  Stack,
+  StackDivider,
+  Icon,
+  useColorModeValue,
+} from '@chakra-ui/react';
+import {
+  IoAnalyticsSharp,
+  IoLogoBitcoin,
+  IoSearchSharp,
+} from 'react-icons/io5';
+import { ReactElement } from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import { getCloudinaryImage, getCloudinaryImageBlur } from '../../components/utils/cloudinaryImageRetreival';
 
-  import Head from 'next/head'
-  import NextLink from 'next/link'
-  
-  export default function WithBackgroundImage() {
-    return (
+
+
+const Feature = ({ text, icon, iconBg }) => {
+  return (
+    <Stack direction={'row'} align={'center'}>
       <Flex
-        w={'full'}
-        minH={'100vh'}
-        // backgroundImage={'../../../../images/backgrounds/mandelbrot.jpg'        }
-        backgroundSize={'fit'}
-        backgroundPosition={'center center'}>
-        <Head>
-        <title>About Us: MedOptics</title>
-        <meta name="description" content="Med-Optics Ltd Webpage" />
+        w={8}
+        h={8}
+        align={'center'}
+        justify={'center'}
+        rounded={'full'}
+        bg={iconBg}>
+        {icon}
+      </Flex>
+      <Text fontWeight={600}>{text}</Text>
+    </Stack>
+  );
+};
+
+export default function SplitWithImage() {
+  return (
+
+    
+    <Container maxW={'5xl'} py={12}>
+      <Head>
+        <title>About Us | MedOptics Ltd</title>
+        <meta name="description" content="MedOptics Ltd Webpage" />
+        {/* <link rel="shortcut icon" href="../public/favicon.ico"></link> */}
         <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
       </Head>
-        <VStack
-          w={'full'}
-          justify={'center'}
-          px={useBreakpointValue({ base: 4, md: 8 })}
-          bgGradient={'linear(to-r, blackAlpha.900, transparent)'}>
-          <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
-            <Text
-              color={'white'}
-              fontWeight={700}
-              lineHeight={1.2}
-              fontFamily={'Arial'}
-              fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}
-              paddingTop={useBreakpointValue({base: '10', md: '0'})}
-              >
-                Med - Optics
+      <Heading
+       as={'h1'}
+        mb={6}
+        fontSize={{
+          base: "6xl",
+          md: "8xl",
+        }}
+        minHeight={'1vh'}
+        fontWeight="bold"
+        lineHeight="none"
+        letterSpacing={{
+          base: "normal",
+          md: "tight",
+        }}
+        color="green.900"
+        _dark={{
+          color: "green.100",
+        }}
+      >
+         {" "}
+        <Text
+          display={{
+            base: "block",
+            // lg: "inline",
+          }}
+          w="full"
+          bgClip="text"
+          bgGradient='linear(to-r, green.500, green.300)'
+          fontWeight="extrabold"
+        >
+          Who We Are
+        </Text>{" "}
+        
+      </Heading>
 
-                Med-Optics  is a private company that was established in 2002 to provide a high standard of quality eye care services.
-                  We have modern equipment and experienced staff to take care of all patients’ needs.
 
-                ​
-                </Text>
-                <Text color={'white'}
-              fontWeight={700}
-              lineHeight={1.2}
-              fontFamily={'Arial'}
-              fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}>
-              
-                  The Company
-                  Over the years, we have grown from a single Optometrist on Buganda road to a team of 50+ strong across 9 service centres.
-                  Established to raise the standard of optometry in Uganda, the company continues to be guided by our core values of 
-                  Professionalism, Honesty, Quality and Excellence in everything we do.
-                ​
-                </Text>
-                <Text
-                color={'white'}
-                fontWeight={700}
-                lineHeight={1.2}
-                fontFamily={'Arial'}
-                fontSize={useBreakpointValue({ base: 'xl', md: '2xl' })}
-                >
-                  Our Mission
-                  Med Optics is devoted to improving our client’s vision. 
-                  We passionately enhance and protect eye health by providing expertise,
-                  accessible services and high-quality products tailored to our client’s needs.
-            </Text>
-            <Stack 
-            direction={'row'}
-            paddingBottom={useBreakpointValue({base: '5em', md: '0'})}
-
-            >
-              <NextLink href="../about/artists">
-              <Button
-                bg={'whiteAlpha.300'}
-                rounded={'full'}
-                color={'white'}
-                fontFamily={'Arial'}
-                _hover={{ bg: 'whiteAlpha.500' }}
-                >
-                Show me more
-              </Button>
-              </NextLink>
-            </Stack>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+        <Stack spacing={4}>
+          <Text
+            textTransform={'uppercase'}
+            color={'green.400'}
+            fontWeight={600}
+            fontSize={'sm'}
+            bg={useColorModeValue('green.50', 'green.900')}
+            p={2}
+            alignSelf={'flex-start'}
+            rounded={'md'}>
+            Our Story
+          </Text>
+          <Heading>A Modern Eye-Care Specialist</Heading>
+          <Text color={'gray.500'} fontSize={'lg'}>
+          Med-Optics  is a private company that was established in 2002 to provide a
+           high standard of quality eye care services.  We have modern equipment and experienced staff to take care of all patients’ needs.
+          </Text>
+          <Stack
+            spacing={4}
+            divider={
+              <StackDivider
+                borderColor={useColorModeValue('gray.100', 'gray.700')}
+              />
+            }>
+            <Feature
+              icon={
+                <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
+              }
+              iconBg={useColorModeValue('yellow.100', 'yellow.900')}
+              text={'9 Service Centres'}
+            />
+            <Feature
+              icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
+              iconBg={useColorModeValue('green.100', 'green.900')}
+              text={'20 Years of Service'}
+            />
+            <Feature
+              icon={
+                <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
+              }
+              iconBg={useColorModeValue('purple.100', 'purple.900')}
+              text={'100,000 patients served'}
+            />
+                        <Feature
+              icon={
+                <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
+              }
+              iconBg={useColorModeValue('purple.100', 'purple.900')}
+              text={'200+ Outreaches Conducted'}
+            />
           </Stack>
-        </VStack>
-      </Flex>
-    );
-  }
+        </Stack>
+        <Flex>
+        <Image
+            w="full"
+            rounded="lg"
+            shadow="2xl"
+            src={getCloudinaryImage('anguyo.jpg')} 
+            alt="Hellonext feedback boards software screenshot"
+            width={1349}
+            height={550} 
+            placeholder="blur"
+            blurDataURL={getCloudinaryImageBlur('anguyo.jpg')}
+          />
+        </Flex>
+      </SimpleGrid>
+    </Container>
+  );
+}

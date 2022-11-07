@@ -65,7 +65,7 @@ export default function TwoPicFeature(){
           <Box>
             <chakra.h2
               mb={4}
-              fontSize={{ base: "3xl", md: "4xl" }}
+              fontSize={{ base: "4xl", md: "6xl" }}
               fontWeight="extrabold"
               letterSpacing="tight"
               textAlign={{ base: "center", md: "left" }}
@@ -78,7 +78,7 @@ export default function TwoPicFeature(){
               lineHeight={{ md: "shorter" }}
               textShadow="2px 0 currentcolor"
             >
-              What to expect at your eye examination 
+              What to expect at your Eye Examination 
             </chakra.h2>
             <chakra.p
               mb={5}
@@ -107,12 +107,12 @@ export default function TwoPicFeature(){
             w="full"
             rounded="lg"
             shadow="2xl"
-            src={getCloudinaryImage('Med-Optics-Slide1.png')} 
+            src={getCloudinaryImage('Slide-2.png')} 
             alt="Hellonext feedback boards software screenshot"
             width={1349}
             height={550} 
             placeholder="blur"
-            blurDataURL={getCloudinaryImageBlur('Med-Optics-Slide1.png')}
+            blurDataURL={getCloudinaryImageBlur('Slide-2.png')}
           />
         </SimpleGrid>
         <SimpleGrid
