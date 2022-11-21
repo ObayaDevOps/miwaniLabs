@@ -448,6 +448,7 @@ export default function SplitWithImage() {
             <Tab>Education</Tab>
           </TabList>
 
+          <Box shadow="xl">
           <TabPanels>
             <TabPanel>
               <AccordionDropperServices />
@@ -456,6 +457,7 @@ export default function SplitWithImage() {
               <AccordionDropperEducation />
             </TabPanel>
           </TabPanels>
+          </Box>
         </Tabs>
         </Box>
 
@@ -473,6 +475,7 @@ export default function SplitWithImage() {
           base: "normal",
           md: "tight",
         }}
+        pt={10}
         color="green.900"
         _dark={{
           color: "green.100",
@@ -494,7 +497,7 @@ export default function SplitWithImage() {
         
       </Heading>
       
-      <Box pb={10}>
+      <Box pb={10} >
         <Tabs variant='soft-rounded' colorScheme='green'>
           <TabList>
             {/* Each tab is n accordion */}
@@ -502,6 +505,7 @@ export default function SplitWithImage() {
             <Tab>Delivery and Returns</Tab>
           </TabList>
 
+          <Box shadow="xl"> 
           <TabPanels>
             <TabPanel>
               <AccordionDropperBuying />
@@ -513,6 +517,7 @@ export default function SplitWithImage() {
               <p>three!</p>
             </TabPanel>
           </TabPanels>
+          </Box>
         </Tabs>
         </Box>
 
@@ -546,6 +551,8 @@ export default function SplitWithImage() {
           bgClip="text"
           bgGradient='linear(to-r, green.500, green.300)'
           fontWeight="extrabold"
+          pt={10}
+
         >
           Legal
         </Text>{" "}
@@ -561,6 +568,7 @@ export default function SplitWithImage() {
 
           </TabList>
 
+          <Box shadow="xl">
           <TabPanels>
             <TabPanel>
               <AccordionDropperServices />
@@ -570,6 +578,7 @@ export default function SplitWithImage() {
             </TabPanel>
 
           </TabPanels>
+          </Box>
         </Tabs>
         </Box> 
     </Container>

@@ -43,7 +43,7 @@ import {
     const { colorMode, toggleColorMode } = useColorMode()
     return (
       <header>
-      {/* <Script src="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" /> */}
+      <Script src="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
         <Button onClick={toggleColorMode} size='xs' fontFamily={'Arial'} py={-1}  rounded={'md'} colorScheme={'green'}
  >
           {colorMode === 'light' ? 'Dark' : 'Light'} Mode
@@ -136,7 +136,7 @@ import {
                   fontWeight={500}
                   color={linkColor}
                   _hover={{ bg: colorMode === 'light' ? 'green.50': 'green.700', textColor: 'green.400'}}
-                  fontFamily={'Arial'}
+                  fontFamily={'Helvetica'}
                   >
                     {navItem.label}
                   </Link>
@@ -184,7 +184,7 @@ import {
 
               _groupHover={{ color: 'green.400' }}
               fontWeight={500}
-              fontFamily={'Arial'}
+              fontFamily={'Helvetica'}
               _hover={{ color: 'green.400' }}
               >
               {label}
@@ -235,7 +235,7 @@ import {
           href={href ?? '#'}
           justify={'space-between'}
           align={'center'}
-          fontFamily="Arial"
+          fontFamily={"Helvetica"}
 
           _hover={{
             textDecoration: 'none',
@@ -267,7 +267,7 @@ import {
             {children &&
               children.map((child) => (
                 <NextLink href={child.href} key={child.label} passHref>
-                  <Link  py={2}  fontFamily="Arial">
+                  <Link  py={2}  fontFamily={"Helvetica"}>
                     {child.label}
                   </Link>
                 </NextLink>

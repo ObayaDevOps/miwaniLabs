@@ -9,7 +9,6 @@ import {
   } from '@chakra-ui/react';
 
   import Image from 'next/image';
-  import { getCloudinaryImage, getCloudinaryImageBlur } from '../utils/cloudinaryImageRetreival';
   import ImageSlider from '../utils/carousel/imageSlider';
   import NextLink from 'next/link';
 
@@ -61,7 +60,7 @@ import {
           bgGradient='linear(to-r, green.500, green.400)'
           fontWeight="extrabold"
         >
-          Eye Care needs
+          Eye Health needs
         </Text>{" "}
         in one single place.
       </Heading>
@@ -166,17 +165,6 @@ import {
       mt={20}
       textAlign="center"
     >
-      {/* <Image
-        w="full"
-        rounded="lg"
-        shadow="2xl"
-        src={getCloudinaryImage('Med-Optics-Slide1.png')} 
-        alt="Hellonext feedback boards software screenshot"
-        width={1349}
-        height={550} 
-        placeholder="blur"
-        blurDataURL={getCloudinaryImageBlur('Med-Optics-Slide1.png')}
-      /> */}
 
       <ImageSlider />
 

@@ -83,9 +83,9 @@ export default function ThreeFeature(){
             />
           }
         >
-          Provide a seamless customer experience across channels, like reserving
-          online and picking up in store. Our SDKs make it easy to integrate
-          into your own mobile and web applications to accept in-store payments.
+        We manufacture lenses in house and are the exclusive Uganda providers of BBGR lenses, 
+        which is a French brand with over 170 years of lens crafting expertise.
+
         </Feature>
 
         <Feature
