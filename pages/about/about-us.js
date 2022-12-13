@@ -44,10 +44,10 @@ export default function SplitWithImage() {
     
     <Container maxW={'5xl'} py={12}>
       <Head>
-        <title>About Us | MedOptics Ltd</title>
+        <title>About Us | MiwaniLabs Ltd</title>
         <meta name="description" content="MedOptics Ltd Webpage" />
         {/* <link rel="shortcut icon" href="../public/favicon.ico"></link> */}
-        <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
+        <link rel="shortcut icon" href="../../../images/icon/MiwaniLens.png"></link>
       </Head>
       <Heading
        as={'h1'}
@@ -63,9 +63,9 @@ export default function SplitWithImage() {
           base: "normal",
           md: "tight",
         }}
-        color="green.900"
+        color="blue.900"
         _dark={{
-          color: "green.100",
+          color: "blue.100",
         }}
       >
          {" "}
@@ -76,7 +76,7 @@ export default function SplitWithImage() {
           }}
           w="full"
           bgClip="text"
-          bgGradient='linear(to-r, green.500, green.300)'
+          bgGradient='linear(to-r, blue.500, blue.300)'
           fontWeight="extrabold"
         >
           Who We Are
@@ -89,19 +89,19 @@ export default function SplitWithImage() {
         <Stack spacing={4}>
           <Text
             textTransform={'uppercase'}
-            color={'green.400'}
+            color={'blue.400'}
             fontWeight={600}
             fontSize={'sm'}
-            bg={useColorModeValue('green.50', 'green.900')}
+            bg={useColorModeValue('blue.50', 'blue.900')}
             p={2}
             alignSelf={'flex-start'}
             rounded={'md'}>
             Our Story
           </Text>
-          <Heading>A Modern Eye-Care Specialist</Heading>
+          <Heading>A Modern Lens Manufacturer</Heading>
           <Text color={'gray.500'} fontSize={'lg'}>
-          Med-Optics  is a private company that was established in 2002 to provide a
-           high standard of quality eye care services.  We have modern equipment and experienced staff to take care of all patients’ needs.
+        Welcome to MiwaniLabs! We are a leading manufacturer of high-quality lenses for a variety of applications. With over 20 years of experience in the industry, we have developed a reputation for producing lenses that are durable, reliable, and capable of delivering crystal-clear images.
+
           </Text>
           <Stack
             spacing={4}
@@ -118,8 +118,8 @@ export default function SplitWithImage() {
               text={'9 Service Centres'}
             />
             <Feature
-              icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-              iconBg={useColorModeValue('green.100', 'green.900')}
+              icon={<Icon as={IoLogoBitcoin} color={'blue.500'} w={5} h={5} />}
+              iconBg={useColorModeValue('blue.100', 'blue.900')}
               text={'20 Years of Service'}
             />
             <Feature

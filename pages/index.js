@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>Home | MedOptics Ltd</title>
-        <meta name="description" content="MedOptics Ltd Webpage" />
+        <title>Home | MiwaniLabs Ltd</title>
+        <meta name="description" content="MiwaniLabs Ltd Webpage" />
         {/* <link rel="shortcut icon" href="../public/favicon.ico"></link> */}
-        <link rel="shortcut icon" href="../../../images/icon/medoptics-logo-mini-square.jpeg"></link>
+        {/* <link rel="shortcut icon" href="../../../images/icon/Miwani.png"></link> */}
       </Head>
 
       <Box>

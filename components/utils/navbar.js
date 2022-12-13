@@ -29,7 +29,7 @@ import {
   import NextImage from 'next/image'
   import africaIcon from '../../public/images/icon/africa.png'
   import africaIconWhite from '../../public/images/icon/africa-white-icon.png'
-  import MedOpticsBoxLogo from '../../public/images/icon/medoptics-logo-mini-square.jpeg'
+  import MiwaniLogoSmall from '../../public/images/icon/MiwaniLens.png'
 
   
 
@@ -44,7 +44,7 @@ import {
     return (
       <header>
       <Script src="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
-        <Button onClick={toggleColorMode} size='xs' fontFamily={'Arial'} py={-1}  rounded={'md'} colorScheme={'green'}
+        <Button onClick={toggleColorMode} size='xs' fontFamily={'Arial'} py={-1}  rounded={'md'} colorScheme={'blue'}
  >
           {colorMode === 'light' ? 'Dark' : 'Light'} Mode
         </Button>
@@ -88,7 +88,7 @@ import {
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <NextLink href='/#' passHref>
             <Link>
-                <NextImage src={colorMode === 'light' ? MedOpticsBoxLogo:  MedOpticsBoxLogo} width={(40)} height={(40)}/>
+                <NextImage src={colorMode === 'light' ? MiwaniLogoSmall:  MiwaniLogoSmall} width={(40)} height={(40)}/>
             </Link>
           </NextLink>
 
@@ -135,7 +135,7 @@ import {
                   href={navItem.href ?? '#'}
                   fontWeight={500}
                   color={linkColor}
-                  _hover={{ bg: colorMode === 'light' ? 'green.50': 'green.700', textColor: 'green.400'}}
+                  _hover={{ bg: colorMode === 'light' ? 'blue.50': 'blue.700', textColor: 'blue.400'}}
                   fontFamily={'Helvetica'}
                   >
                     {navItem.label}
@@ -174,7 +174,7 @@ import {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('green.50', 'gray.900') }}
+        _hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}
         >
         <Stack direction={'row'} align={'center'}>
           <Box>
@@ -182,10 +182,10 @@ import {
               transition={'all .3s ease'}
               rounded={'md'}
 
-              _groupHover={{ color: 'green.400' }}
+              _groupHover={{ color: 'blue.400' }}
               fontWeight={500}
               fontFamily={'Helvetica'}
-              _hover={{ color: 'green.400' }}
+              _hover={{ color: 'blue.400' }}
               >
               {label}
             </Text>
@@ -202,7 +202,7 @@ import {
             justify={'flex-end'}
             align={'center'}
             flex={1}>
-            <Icon color={'green.400'} w={5} h={5} as={ChevronRightIcon} />
+            <Icon color={'blue.400'} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
         </Stack>
       </Link>
@@ -286,19 +286,19 @@ import {
       children: [
         {
           label: 'Who We Are',
-          subLabel: 'Our Journey',
+          // subLabel: 'Our Journey',
           href: '/about/about-us',
         },
-        {
-          label: 'FAQs',
-          subLabel: 'Frequently Asked Questions',
-          href: '/about/faqs',
-        },
-        {
-          label: 'Careers',
-          subLabel: 'Interested in working for us ?',
-          href: '/about/careers',
-        },
+        // {
+        //   label: 'FAQs',
+        //   subLabel: 'Frequently Asked Questions',
+        //   href: '/about/faqs',
+        // },
+        // {
+        //   label: 'Careers',
+        //   subLabel: 'Interested in working for us ?',
+        //   href: '/about/careers',
+        // },
         // {
         //   label: "How it's Made",
         //   subLabel: 'The Tech Behind this Website',
@@ -306,101 +306,101 @@ import {
         // },
       ],
     },
-    {
-      label: 'Products & Services',
-      children: [
-        {
-          label: 'Products',
-          subLabel: 'Frames, Lenses, Contact Lens and more ...',
-          href: '/products-and-services/products',
-        },
-        {
-          label: 'Services',
-          subLabel: 'Book Appointments, Consultations ...',
-          href: '/products-and-services/services',
-        },
-        {
-          label: 'Frame Size Guide',
-          subLabel: 'Guidance for the perfect glasses fit !',
-          href: '/products-and-services/frame-size-guide',
-        },
-      ],
-    }, 
-    {
-      label: 'Book Appointment',
-      children: [
-        {
-          label: 'Eye Test',
-          subLabel: 'Modern Specialist Machinery, Great Service',
-          href: '/appointments/eyeTest',
-        },
-        {
-          label: 'Glasses Fitting',
-          subLabel: "For Maximal Comfort",
-          href: '/appointments/eyeTest',
-        },
-        {
-          label: 'Schedule Collection',
-          subLabel: 'Collect previously ordered items',
-          href: '/appointments/eyeTest',
-        }
-      ],
-    },   
-    {
-      label: 'Find Us',
-      children: [
-        {
-          label: 'Service Centres',
-          subLabel: '',
-          href: '/info/service-centres',
-        },
-        {
-          label: 'Contact Us',
-          subLabel: " ",
-          href: '/info/contact-enquiry',
-        },
-        // {
-        //   label: '4FR0P0C3N3 43VR',
-        //   subLabel: 'Conceptual Blockchain Art',
-        //   href: '/tech/asciiTorus',
-        // }
-      ],
-    },
-    {
-      label: 'Blog',
-      // href: '/exhibitions/exhibitions-home',
-      children: [
-        // {
-        //   label: 'Upcoming/Current',
-        //   subLabel: '',
-        //   href: '/exhibitions/current-exhibition',
-        // },
-        {
-          label: 'Exhibition Archive',
-          subLabel: '',
-          href: '/exhibitions/exhibitions-archive',
-        },
+    // {
+    //   label: 'Products & Services',
+    //   children: [
+    //     {
+    //       label: 'Products',
+    //       subLabel: 'Frames, Lenses, Contact Lens and more ...',
+    //       href: '/products-and-services/products',
+    //     },
+    //     {
+    //       label: 'Services',
+    //       subLabel: 'Book Appointments, Consultations ...',
+    //       href: '/products-and-services/services',
+    //     },
+    //     {
+    //       label: 'Frame Size Guide',
+    //       subLabel: 'Guidance for the perfect glasses fit !',
+    //       href: '/products-and-services/frame-size-guide',
+    //     },
+    //   ],
+    // }, 
+    // {
+    //   label: 'Book Appointment',
+    //   children: [
+    //     {
+    //       label: 'Eye Test',
+    //       subLabel: 'Modern Specialist Machinery, Great Service',
+    //       href: '/appointments/eyeTest',
+    //     },
+    //     {
+    //       label: 'Glasses Fitting',
+    //       subLabel: "For Maximal Comfort",
+    //       href: '/appointments/eyeTest',
+    //     },
+    //     {
+    //       label: 'Schedule Collection',
+    //       subLabel: 'Collect previously ordered items',
+    //       href: '/appointments/eyeTest',
+    //     }
+    //   ],
+    // },   
+    // {
+    //   label: 'Find Us',
+    //   children: [
+    //     {
+    //       label: 'Service Centres',
+    //       subLabel: '',
+    //       href: '/info/service-centres',
+    //     },
+    //     {
+    //       label: 'Contact Us',
+    //       subLabel: " ",
+    //       href: '/info/contact-enquiry',
+    //     },
+    //     // {
+    //     //   label: '4FR0P0C3N3 43VR',
+    //     //   subLabel: 'Conceptual Blockchain Art',
+    //     //   href: '/tech/asciiTorus',
+    //     // }
+    //   ],
+    // },
+    // {
+    //   label: 'Blog',
+    //   // href: '/exhibitions/exhibitions-home',
+    //   children: [
+    //     // {
+    //     //   label: 'Upcoming/Current',
+    //     //   subLabel: '',
+    //     //   href: '/exhibitions/current-exhibition',
+    //     // },
+    //     {
+    //       label: 'Exhibition Archive',
+    //       subLabel: '',
+    //       href: '/exhibitions/exhibitions-archive',
+    //     },
         // {
         //   label: 'Museum Of Selves',
         //   subLabel: 'Collaborative Exhibition and Youth Workshop',
         //   href: '/exhibitions/museum-of-selves-exhibition',
         // }
-      ],
-    },
+    //   ],
+    // },
 
-    {
-      label: 'Shop',
-      children: [
-        // {
-        //   label: 'Upcoming/Current',
-        //   subLabel: '',
-        //   href: '/workshops/current-workshop',
-        // },
-        {
-          label: 'Workshop Archive',
-          subLabel: '',
-          href: '/workshops/workshops-archive',
-        }
-      ],
-    }
+    // {
+    //   label: 'Shop',
+    //   children: [
+    //     // {
+    //     //   label: 'Upcoming/Current',
+    //     //   subLabel: '',
+    //     //   href: '/workshops/current-workshop',
+    //     // },
+    //     {
+    //       label: 'Workshop Archive',
+    //       subLabel: '',
+    //       href: '/workshops/workshops-archive',
+    //     }
+    //   ],
+    // }
   ];

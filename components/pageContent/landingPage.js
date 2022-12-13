@@ -43,9 +43,11 @@ export default function CallToActionWithAnnotation() {
         </Flex> */}
 		
       <Hero1 />
-      <ThreeFeature />
+
+      
+      {/* <ThreeFeature />
       <TwoPicFeature />
-      <WithSpeechBubbles />
+      <WithSpeechBubbles /> */}
 
       {/* <CallToAction />
       <CallToActionBanner /> */}
